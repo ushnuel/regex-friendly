@@ -1,0 +1,27 @@
+{
+  "name": "regex-friendly",
+  "version": "1.0.0",
+  "description": "Readable regex transformations, validations, and utilities with both static and chainable API.",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "vitest"
+  },
+  "keywords": [
+    "regex",
+    "typescript",
+    "string",
+    "validation",
+    "chainable"
+  ],
+  "author": "Emmanuel Eze",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.6.1"
+  }
+}
