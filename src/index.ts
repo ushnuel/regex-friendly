@@ -1,6 +1,7 @@
 import { transformations } from "./transformations";
 import { validations } from "./validations";
 import { advanced } from "./advanced";
+import { rexFunctions } from "./functions";
 
 type Transformations = typeof transformations;
 type Validations = typeof validations;
@@ -47,4 +48,10 @@ function regexify(input?: string): Chainable {
 }
 
 // Export as hybrid API
-export default Object.assign(regexify, transformations, validations, advanced);
+export default Object.assign(
+  regexify,
+  transformations,
+  validations,
+  advanced,
+  rexFunctions
+);
