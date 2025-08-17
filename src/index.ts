@@ -3,8 +3,11 @@ import { validations } from "./validations";
 import { advanced } from "./advanced";
 import { rexFunctions } from "./functions";
 
+// ------------ Types -----------------------
 type Transformations = typeof transformations;
 type Validations = typeof validations;
+type Advanced = typeof advanced;
+type REXFunctions = typeof rexFunctions;
 
 // Utility type to get the rest of the parameters of a function
 type Tail<F extends (arg0: any, ...args: any[]) => any> = F extends (
@@ -23,6 +26,12 @@ type Chainable = {
 } & {
   result: () => string;
 };
+
+export type RegexFriendlyType = ((input?: string) => Chainable) &
+  Transformations &
+  Validations &
+  Advanced &
+  REXFunctions;
 
 function regexify(input?: string): Chainable {
   let value = input || "";
@@ -47,11 +56,14 @@ function regexify(input?: string): Chainable {
   return chain;
 }
 
-// Export as hybrid API
-export default Object.assign(
+// ---------- Exports ----------
+const RegexFriendly: RegexFriendlyType = Object.assign(
   regexify,
   transformations,
   validations,
   advanced,
   rexFunctions
 );
+
+export default RegexFriendly;
+export { transformations, validations, advanced, rexFunctions };
