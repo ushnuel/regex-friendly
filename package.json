@@ -9,6 +9,11 @@
     "build": "rollup -c",
     "test": "vitest"
   },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "keywords": [
     "regex",
     "regex-utils",
@@ -33,5 +38,12 @@
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.0.0",
     "vitest": "^3.2.4"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
   }
 }
