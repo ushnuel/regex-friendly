@@ -103,4 +103,4 @@ RegexFriendly("foo bar baz")
 
 ## 📜 License
 
-MIT © [Your Name](https://github.com/yourusername)
+MIT © [Emmanuel Eze](https://github.com/ushnuel)
