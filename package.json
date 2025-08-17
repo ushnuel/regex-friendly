@@ -11,17 +11,27 @@
   },
   "keywords": [
     "regex",
-    "typescript",
-    "string",
+    "regex-utils",
+    "regex-friendly",
     "validation",
-    "chainable"
+    "string",
+    "transform",
+    "typescript",
+    "javascript",
+    "chainable",
+    "regex-helper",
+    "string-utils",
+    "regex-patterns",
+    "data-validation",
+    "regex-transform",
+    "regex-functions"
   ],
   "author": "Emmanuel Eze",
   "license": "MIT",
   "devDependencies": {
-    "rollup": "^4.0.0",
+    "rollup": "^4.46.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "typescript": "^5.0.0",
-    "vitest": "^1.6.1"
+    "vitest": "^3.2.4"
   }
 }
