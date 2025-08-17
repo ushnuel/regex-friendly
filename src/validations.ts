@@ -52,6 +52,14 @@ export const validations = {
   /** Checks if string is a valid phone number
    * @param str - Phone number string to validate
    * @returns true if valid, false otherwise
+   * @example
+   * ```typescript
+   * isPhone("123-456-7890");
+   * // true
+   * isPhone("+1 (123) 456-7890");
+   * // true
+   * isPhone("invalid-phone");
+   * // false
    *
    * This regex allows optional leading +, digits, spaces, parentheses, and hyphens.
    * Adjust regex for stricter validation if needed.
