@@ -161,6 +161,16 @@ describe("Transformations", () => {
     expect(result).toBe("  hello world");
   });
 
+  it("should convert string to uppercase", () => {
+    const result = regexify.toUpperCase("Hello World!");
+    expect(result).toBe("HELLO WORLD!");
+  });
+
+  it("should chain toUpperCase after another transform", () => {
+    const result = regexify("  hello world  ").trim().toUpperCase().result();
+    expect(result).toBe("HELLO WORLD");
+  });
+
   it("should keep only numbers", () => {
     const result = regexify.onlyNumbers("abc123xyz");
     expect(result).toBe("123");
