@@ -10,7 +10,7 @@ Fixes # (issue number, if applicable)
 
 Please make sure the following requirements are met before requesting a review:
 
-- [ ] I have read and followed the [Contributing Guidelines](../CONTRIBUTING.md).
+- [ ] I have read and followed the [Contributing Guidelines](../../CONTRIBUTING.md).
 - [ ] Tests have been added or updated (`npm test` passes locally).
 - [ ] Commits are squashed and follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/).
 - [ ] I have verified that CI checks pass on my branch.
