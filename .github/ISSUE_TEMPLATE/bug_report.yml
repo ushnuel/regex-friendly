@@ -1,0 +1,61 @@
+name: "🐛 Bug Report"
+description: Report a reproducible bug or regression
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug! Please fill out the details below.
+  - type: input
+    id: summary
+    attributes:
+      label: Bug Summary
+      description: A clear and concise description of the bug
+      placeholder: "The function .noSpace() throws when..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide a minimal reproducible example
+      placeholder: |
+        1. Call regexify("hello world").noSpace().result()
+        2. Observe the output
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What did you expect to happen?
+      placeholder: "It should return 'helloworld'"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: "It throws an error"
+    validations:
+      required: true
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where are you running this?
+      multiple: true
+      options:
+        - Node.js 20.x
+        - Node.js 18.x
+        - Node.js 16.x
+        - Browser
+        - Other
+  - type: input
+    id: version
+    attributes:
+      label: Package Version
+      placeholder: "e.g. 1.2.0"
+    validations:
+      required: true
