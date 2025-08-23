@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/regex-friendly.svg)](https://www.npmjs.com/package/regex-friendly)
 [![npm downloads](https://img.shields.io/npm/dm/regex-friendly.svg)](https://www.npmjs.com/package/regex-friendly)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/ushnuel/regex-friendly/ci.yml?branch=main)](https://github.com/ushnuel/regex-friendly/actions)
+[![Build Status](https://github.com/ushnuel/regex-friendly/workflows/CI/badge.svg)](https://github.com/ushnuel/regex-friendly/actions)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
