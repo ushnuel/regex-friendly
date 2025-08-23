@@ -166,6 +166,11 @@ describe("Transformations", () => {
     expect(result).toBe("123");
   });
 
+  it("should return empty string when no digits are present", () => {
+    const result = regexify.onlyNumbers("abcdef");
+    expect(result).toBe("");
+  });
+
   it("should remove numbers", () => {
     const result = regexify.removeNumbers("abc123xyz");
     expect(result).toBe("abcxyz");
