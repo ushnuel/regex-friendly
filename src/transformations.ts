@@ -451,6 +451,21 @@ export const transformations = {
    * the native String.toUpperCase() method.
    */
   toUpperCase: (str: string) => str.toUpperCase(),
+  /** PascalCase
+   * @param str The input string
+   * @returns The modified string converted to PascalCase
+   * @example
+   * regexify.toPascalCase("Hello World!"); // "HelloWorld"
+   * regexify("Hello World!").toPascalCase().result(); // "HelloWorld"
+   * @description
+   * This transformation converts the string to PascalCase.
+   * It leverages the toCamelCase transformation and capitalizes the first letter.
+   * This is useful for creating class or component names that follow the PascalCase convention.
+   */
+  toPascalCase: (str: string) => {
+    const camel = transformations.toCamelCase(str);
+    return camel.charAt(0).toUpperCase() + camel.slice(1);
+  },
 
   /**
    * Custom transformation: custom
