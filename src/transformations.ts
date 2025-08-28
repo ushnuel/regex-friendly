@@ -440,6 +440,17 @@ export const transformations = {
       .toSlug(str)
       .replace(/-([a-z0-9])/g, (_, c) => c.toUpperCase()),
 
+  /** Convert all characters to UPPERCASE
+   * @param str The input string
+   * @returns The string in uppercase
+   * @example
+   * regexify.toUpperCase("Hello World"); // "HELLO WORLD"
+   * regexify("  Hello World  ").trim().toUpperCase().result(); // "HELLO WORLD"
+   * @description
+   * This transformation converts the entire string to uppercase using
+   * the native String.toUpperCase() method.
+   */
+  toUpperCase: (str: string) => str.toUpperCase(),
   /** PascalCase
    * @param str The input string
    * @returns The modified string converted to PascalCase
